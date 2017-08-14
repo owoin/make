@@ -1,0 +1,8 @@
+inkscape debian9 
+sudo apt-get build-dep inkscape
+
+mkdir build
+cd build
+cmake -DCMAKE_INSTALL_PREFIX=$(pwd)/../ ..
+make -j5
+sudo make install
