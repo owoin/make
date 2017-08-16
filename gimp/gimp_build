@@ -1,5 +1,7 @@
 ./configure --prefix=/opt/gimp/gimp-2.8.22 --disable-shared
 ./configure --prefix=/opt/gimp/gimp-2.8.22 --enable-shared=no --enable-static=yes
-#运行时查找动态库
+#LT_SYS_LIBRARY_PATH 运行时查找动态库
 LT_SYS_LIBRARY_PATH="/usr/lib:/usr/local/lib:$prefix/lib" ./configure --prefix=/opt/gimp/gimp-2.8.22
 LT_SYS_LIBRARY_PATH="/usr/lib:/usr/local/lib:$prefix/lib" ./configure --prefix=$(pwd)/gimp-2.8.22
+
+将文件libbabl-0.1.so.0.117.1 和 libgegl-0.2.so.0.199.1  复制到安装目录下lib文件夹 并软连接改名为libbabl-0.1.so.0 和 libgegl-0.2.so.0
