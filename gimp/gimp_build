@@ -1,3 +1,5 @@
+./configure --help
+
 ./configure --prefix=/opt/gimp/gimp-2.8.22 --disable-shared
 ./configure --prefix=/opt/gimp/gimp-2.8.22 --enable-shared=no --enable-static=yes
 #LT_SYS_LIBRARY_PATH 运行时查找动态库
