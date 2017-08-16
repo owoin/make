@@ -1,0 +1,8 @@
+./configure --help
+
+./configure --prefix=/opt/gimp/gimp-2.8.22 --disable-shared
+
+./configure --prefix=/opt/gimp/gimp-2.8.22 --enable-shared=no --enable-static=yes
+#yunxing shi chazhao dongtaiku 
+
+ LT_SYS_LIBRARY_PATH="/usr/lib:/usr/local/lib:$prefix/lib" ./configure --prefix=/opt/gimp/gimp-2.8.22
